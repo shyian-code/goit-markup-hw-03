@@ -1,0 +1,337 @@
+:root {
+    --white: #ffffff;
+    --dairy: #FCFCFC;
+    --cloud: #f4f4fd;
+    --cornflower: #E7E9FC;
+    --light-slate: #8E8F99;
+    --navy-blue-modal: rgba(46, 47, 66, 0.40);
+    --iris: #4d5ae5;
+    --ocean: #404BBF;
+    --navy-blue: #2e2f42;
+    --slate: #434455;
+    --green: #31D0AA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--slate);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: var(--white);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    border-bottom: 1px solid var(--cornflower);
+    display: flex;
+    padding: 24px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav__logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--iris);
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+
+.header-nav__logo--studio-word {
+    color: var(--navy-blue);
+}
+
+.header-nav__menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header-nav__menu-list-item-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.header-nav__menu-list-item-link:hover,
+.header-nav__menu-list-item-link:focus {
+    color: var(--ocean);
+}
+
+/* Header Address */
+.header-address {
+    font-style: normal;
+    display: flex;
+    margin-left: auto;
+}
+
+.header-address__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-address__list-item-link {
+    color: var(--slate);
+    letter-spacing: 0.32px;
+    font-style: normal;
+}
+
+.header-address__list-item-link:hover,
+.header-address__list-item-link:focus {
+    color: var(--ocean);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navy-blue);
+    padding: 100px 0;
+}
+
+.footer__logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--iris);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer__logo--studio-word {
+    color: var(--cloud);
+}
+
+.footer__text {
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    max-width: 264px;
+}
+
+/* Home page */
+.hero-section {
+    background-color: var(--navy-blue);
+    padding: 188px 0;
+}
+
+.hero-section__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    max-width: 496px;
+    margin: 0 auto 48px;
+}
+
+.hero-section__button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--iris);
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    margin: 0 auto;
+}
+
+.hero-section__button:hover,
+.hero-section__button:focus {
+    background-color: var(--ocean);
+}
+
+.service-section {
+    padding: 120px 0;
+}
+
+.service-section__title {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    font-size: 700;
+    color: var(--navy-blue);
+}
+
+.service-section__list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.service-section__list-item-title,
+.portfolio-section__work-title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    margin-bottom: 8px;
+}
+
+.service-section__list-item-description {
+    letter-spacing: 0.02em;
+}
+
+.our-work-section {
+    padding-bottom: 120px;
+}
+
+.our-work-section__title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    font-size: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+    margin-bottom: 72px;
+}
+
+.our-work-section__list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.team-section {
+    background-color: var(--cloud);
+    padding: 120px 0;
+}
+
+.team-section__title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+    margin-bottom: 72px;
+}
+
+.team-section__list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.team-section__list-item {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.team-section__list-item-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    margin-bottom: 8px;
+    padding-top: 32px;
+}
+
+.team-section__list-item-occupation {
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+}
+
+/* Prtfolio page */
+.portfolio-section {
+    padding: 96px 0 120px;
+}
+
+.portfolio-section__filter-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolio-section__filter-button {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+    background-color: var(--cloud);
+    border: 1px solid var(--cornflower);
+    padding: 12px 24px;
+}
+
+.portfolio-section__filter-button:hover,
+.portfolio-section__filter-button:focus {
+    background-color: var(--ocean);
+    color: var(--white);
+}
+
+.portfolio-section__work-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-section__work-list-item {}
+
+.portfolio-section__work-list-link {
+    text-decoration: none;
+    text-align: left;
+}
+
+.portfolio-section__work-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+}
+
+.portfolio-section__work-type {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
